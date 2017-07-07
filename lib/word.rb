@@ -6,7 +6,7 @@ class Word
     @id = @@words.length().+(1)
     @definations = []
   end
-
+ #calls a spesific  method clear on an object
   define_method(:id) do
     @id
   end
