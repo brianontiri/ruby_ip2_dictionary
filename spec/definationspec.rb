@@ -1,6 +1,6 @@
 require('rspec')
 require('defination')#requires from the defination.rb file
-
+#clears defination input 
 describe('Defination') do
   before() do
     Defination.clear()
