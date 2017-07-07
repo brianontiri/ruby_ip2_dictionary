@@ -43,7 +43,7 @@ end
      expect(Defination.all()).to(eq([]))
    end
  end
-
+#spec  test that is passed in the rb file for finding a defination by id
  describe(".find") do
   it("returns a defination by its id number") do
     test_defination = Defination.new("kenyan anthem")
