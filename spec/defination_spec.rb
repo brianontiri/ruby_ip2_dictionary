@@ -21,7 +21,7 @@ describe('#id') do
 end
 
 
-
+#spec  test that is passed in the rb file for saving a spesific defination
  describe("#save") do
    it("adds a defination to the array of saved definations") do
      test_defination = Defination.new("an animal")
