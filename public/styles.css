@@ -12,7 +12,7 @@ body {
 
 
 
-body {
+.dictionary {
   background: url("https://static.pexels.com/photos/5156/people-eiffel-tower-lights-night.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
