@@ -3,7 +3,7 @@
 }
 
 body {
-  background: url("https://static.pexels.com/photos/5156/people-eiffel-tower-lights-night.jpg") no-repeat center center fixed;
+  background: url("https://static.pexels.com/photos/28221/pexels-photo-28221.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -35,5 +35,5 @@ body {
 
 footer {
   text-align: center;
-  color: white;
+  color:black;
 }
