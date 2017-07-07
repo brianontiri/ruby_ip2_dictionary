@@ -1,4 +1,6 @@
-These are the definations
+<div class="wordform"
+
+            <h1>These are the definations</h1>
 <ul>
   <% @word.definations().each() do |defination| %>
   <li><a href="/definations/<%= defination.id() %>"><%= defination.defination() %></a></li>
@@ -7,3 +9,4 @@ These are the definations
 
 <a href="/words/<%= @word.id%>/definations/new">Add a new defination</a>
 <a href="/">Return to Main Page</a>
+</div>
