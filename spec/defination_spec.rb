@@ -29,7 +29,7 @@ end
      expect(Defination.all()).to(eq([test_defination]))
    end
  end
-
+#spec  test that is passed in the rb file for finding all definations of a word
  describe(".all") do
    it("its empty at first") do
      expect(Defination.all()).to(eq([]))
