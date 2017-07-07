@@ -15,7 +15,7 @@ class Defination
     @id
   end
 
-
+ #calls to the entire class Defination 
 
   define_singleton_method(:all) do
     @@definations
