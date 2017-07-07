@@ -40,7 +40,7 @@ class Word
     end
       found_word
   end
-
+#calls  method   that adds a defination 
 define_method(:add_defination) do |defination|
   @definations.push(defination)
 end
