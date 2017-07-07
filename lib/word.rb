@@ -30,7 +30,7 @@ class Word
     define_singleton_method(:clear) do
       @@words = []
     end
-
+#calls  method  on the entire class to find word by id
     define_singleton_method(:find) do |identification|
       found_word = nil
       @@words.each() do |word|
