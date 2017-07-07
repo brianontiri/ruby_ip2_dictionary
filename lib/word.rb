@@ -18,7 +18,7 @@ class Word
     define_method(:definations) do
       @definations
     end
-
+#calls  method  on the entire class
     define_singleton_method(:all) do
       @@words
     end
