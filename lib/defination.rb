@@ -28,7 +28,7 @@ class Defination
   define_singleton_method(:clear) do
     @@definations = []
   end
-
+ #calls to the entier class   by method find
   define_singleton_method(:find) do
     found_defination = nil
     @@definations.each() do |defination|
