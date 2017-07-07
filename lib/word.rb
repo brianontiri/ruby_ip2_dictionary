@@ -22,7 +22,7 @@ class Word
     define_singleton_method(:all) do
       @@words
     end
-
+#calls a spesific  method  on an object
     define_method(:save) do
       @@words.push(self)
     end
