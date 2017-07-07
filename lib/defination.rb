@@ -6,7 +6,7 @@ class Defination
     @id = @@definations.length().+(1)
 
   end
-
+   #calls to the specifically defination
   define_method(:defination) do
     @defination
   end
