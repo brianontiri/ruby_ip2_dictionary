@@ -26,7 +26,7 @@ class Word
     define_method(:save) do
       @@words.push(self)
     end
-
+#calls  method  on the entire class
     define_singleton_method(:clear) do
       @@words = []
     end
