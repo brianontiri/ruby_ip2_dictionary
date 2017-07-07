@@ -15,12 +15,12 @@ class Defination
     @id
   end
 
- #calls to the entire class Defination 
+ #calls to the entire class Defination
 
   define_singleton_method(:all) do
     @@definations
   end
-
+ #calls to the specifically  method save
   define_method(:save) do
     @@definations.push(self)
   end
