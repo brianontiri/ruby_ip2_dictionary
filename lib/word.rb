@@ -14,7 +14,7 @@ class Word
     define_method(:word) do
       @word
     end
-
+#calls a spesific  method  on an object
     define_method(:definations) do
       @definations
     end
