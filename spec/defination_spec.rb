@@ -12,7 +12,7 @@ describe('Defination') do
     expect(test_defination.defination()).to(eq("capital city of kenya"))
   end
 end
-
+#spec  test that is passed in the rb file for identification of a spesific defination
 describe('#id') do
   it("returns the id ") do \
     test_defination = Defination.new("capital city")
