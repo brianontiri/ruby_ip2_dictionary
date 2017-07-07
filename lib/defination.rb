@@ -10,7 +10,7 @@ class Defination
   define_method(:defination) do
     @defination
   end
-
+ #calls to the specifically id
   define_method(:id) do
     @id
   end
