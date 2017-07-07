@@ -35,7 +35,7 @@ end
      expect(Defination.all()).to(eq([]))
    end
  end
-
+#spec  test that is passed in the rb file for clearing saved definations
  describe(".clear") do
    it("empties all saved definations") do
      Defination.new("a cat family").save()
