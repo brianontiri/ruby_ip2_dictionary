@@ -5,7 +5,7 @@ describe('Defination') do
   before() do
     Defination.clear()
   end
-
+   #spec  test that is passed in the rb file for defination
   describe('#defination')
   it("returns the defination ") do
     test_defination = Defination.new("capital city of kenya")
