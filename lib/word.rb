@@ -4,6 +4,7 @@ class Word
   define_method(:initialize) do |word|
     @word = word
     @id = @@words.length().+(1)
+    @definations = []
   end
 
   define_method(:id) do
@@ -12,6 +13,10 @@ class Word
 
     define_method(:word) do
       @word
+    end
+
+    define_method(:definations) do
+      @definations
     end
 
     define_singleton_method(:all) do
@@ -35,5 +40,9 @@ class Word
     end
       found_word
   end
+
+define_method(:add_defination) do |defination|
+  @definations.push(defination)
+end
 
 end

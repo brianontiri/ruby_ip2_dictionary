@@ -1,6 +1,6 @@
 require('rspec')
 require('defination')#requires from the defination.rb file
-#clears defination input 
+#clears defination input
 describe('Defination') do
   before() do
     Defination.clear()
@@ -20,12 +20,7 @@ describe('#id') do
   end
 end
 
-describe('#words') do
-  it("initially returns an empty array of words ") do
-    test_defination = Defination.new("capital city")
-    expect(test_defination.words()).to(eq([]))
-  end
-end
+
 
  describe("#save") do
    it("adds a defination to the array of saved definations") do

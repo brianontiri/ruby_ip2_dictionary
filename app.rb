@@ -2,9 +2,10 @@ require('sinatra')
 require('sinatra/reloader')
 also_reload('lib/**/*.rb')
 require('./lib/word')
+require('./lib/defination')
 
 get('/') do
-  erb(:words_form)
+  erb(:index)
 end
 
 get('/words') do
@@ -23,7 +24,26 @@ post('/words') do
   erb(:done)
 end
 
+get('/definations/:id') do
+  @defination = Defination.find(params.fetch('id'))
+  erb(:defination)
+end
+
 get('/words/:id') do
   @word = Word.find(params.fetch("id"))
-  erb(:words)
+  erb(:word)
+end
+
+get('/words/:id/definations/new') do
+  @word = Word.find(params.fetch('id').to_i())
+  erb(:word_definations_form)
+end
+
+post('/definations') do
+  defination = params.fetch('defination')
+  @defination = Defination.new(defination)
+  @defination.save()
+  @word = Word.find(params.fetch('word_id').to_i())
+  @word.add_defination(@defination)
+  erb(:done)
 end

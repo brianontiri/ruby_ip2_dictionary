@@ -1,10 +1,10 @@
 class Defination
-  @@definatios = []
+  @@definations = []
 
   define_method(:initialize) do |defination|
     @defination = defination
     @id = @@definations.length().+(1)
-    @words = []
+
   end
 
   define_method(:defination) do
@@ -15,14 +15,13 @@ class Defination
     @id
   end
 
-  define_method(:words) do
-    @words
+
 
   define_singleton_method(:all) do
     @@definations
   end
 
-  define_singleton_method(:save) do
+  define_method(:save) do
     @@definations.push(self)
   end
 
@@ -40,4 +39,3 @@ class Defination
     found_defination
   end
 end
-  

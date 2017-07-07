@@ -1,5 +1,7 @@
 require('rspec')
 require('word')
+require('defination')
+
 
 describe('Word') do
   before() do
@@ -7,10 +9,17 @@ describe('Word') do
   end
 
      describe("#word") do
-      it("returns the word inputed") do
+      it("returns the word inputed to the word") do
       test_word = Word.new("dog")
       expect(test_word.word()).to(eq("dog"))
      end
+  end
+
+  describe('#definations') do
+    it("initially returns an empty array of definations to the word ") do
+      test_word = Word.new("capital")
+      expect(test_word.definations()).to(eq([]))
+    end
   end
 
        describe(".all") do
@@ -52,5 +61,14 @@ describe('Word') do
         expect(Word.find(test_word.id())).to(eq(test_word))
     end
   end
+  describe('#add_defination') do
+        it("adds a new defination to a word") do
+          test_word = Word.new("Bob")
+          test_defination = Defination.new("kenyan boy")
+          test_word.add_defination(test_defination)
+          expect(test_word.definations()).to(eq([test_defination]))
+        end
+      end
+
 
 end
