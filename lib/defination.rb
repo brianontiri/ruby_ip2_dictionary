@@ -24,7 +24,7 @@ class Defination
   define_method(:save) do
     @@definations.push(self)
   end
-
+ #calls to the entier class   by method clear
   define_singleton_method(:clear) do
     @@definations = []
   end
