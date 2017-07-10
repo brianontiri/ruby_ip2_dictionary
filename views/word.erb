@@ -1,6 +1,6 @@
-<div class="wordform"
+<div class="wordform">
 
-            <h1>These are the definations</h1>
+            <h1 style=" color:white;">These are the definations</h1>
 <ul>
   <% @word.definations().each() do |defination| %>
   <li><a href="/definations/<%= defination.id() %>"><%= defination.defination() %></a></li>
